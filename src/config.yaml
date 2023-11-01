@@ -1,0 +1,62 @@
+# cuda
+cuda_index: 0
+# seed: 42
+seed: 2023
+
+# path 
+lang: en
+json_path: data/dataset/jsons
+preprocessed_dir: data/preprocessed
+target_dir: data/save
+
+bert-en:
+  bert_path: /root/lyq/pretrain/roberta-large
+  cls: '<s>'
+  sep: '</s>'
+  unk: '<unk>'
+  pad: '<pad>'
+
+bert-zh:
+  bert_path: /root/lyq/pretrain/chinese-roberta
+  cls: '[CLS]'
+  sep: '[SEP]'
+  unk: '[UNK]'
+  pad: '[PAD]'
+
+unkown_tokens: '😅🍔—🐛🙉🙄🔨🏆🆔👌👀🥺冖🌚🙈😭🍎😅💩尛硌糇💰🐴🙊💯⭐🐶🐟🙏😄🏻📶🐮🍺❌🤔🐍🐸🙃🤣🏆😂🌚'
+max_length: 512
+
+# parameter 
+epoch_size: 30
+batch_size: 1
+lr: 1e-3
+bert_lr: 1e-5
+patience: 10
+max_grad_norm: 1.0
+warmup_proportion: 0.1
+gradient_accumulation_steps: 1
+adam_epsilon: 1e-8
+warmup_steps: 0
+weight_decay: 0
+
+inner_dim: 256
+
+pos_dim: 100
+lstm_dim: 300
+hidden_dim: 768
+# dict 
+bio_mode: 'OBIES'
+asp_type: 'Aspect'
+tgt_type: 'Target'
+opi_type: 'Opinion'
+
+polarity_dict:
+  O: 0
+  pos: 1
+  neg: 2
+  other: 3
+
+loss_weight:
+  ent: 1
+  rel: 5
+  pol: 3
