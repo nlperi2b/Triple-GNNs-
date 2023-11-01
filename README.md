@@ -1,6 +1,10 @@
 # Triple-GNNs
 This is code for Triple-GNNs.
 
+## RUN
+`sh run_zh.sh` for ZH dataset
+
+`sh run_en.sh` for EN dataset
 ## Resource Requirement
 ### Environment
 - Pytorch 1.12.1+cu113
