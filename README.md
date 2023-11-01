@@ -13,7 +13,7 @@ This is code for Triple-GNNs.
 
 ### Dependency Parser
 1. `en_core_web_sm-3.3.0` for EN dataset. **[DOWNLOAD](https://github.com/explosion/spacy-models/releases/tag/en_core_web_sm-3.3.0)**
-2. `zn_core_web_sm-3.3.0` for ZH dataset. **[DOWNLOAD](https://github.com/explosion/spacy-models/releases/tag/ZH_core_web_sm-3.3.0)**
+2. `zn_core_web_sm-3.3.0` for ZH dataset. **[DOWNLOAD](https://github.com/explosion/spacy-models/releases/tag/zh_core_web_sm-3.3.0)**
 
 ### Device
 1. 12GB GPU for ZH dataset.
